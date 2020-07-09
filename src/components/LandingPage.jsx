@@ -56,10 +56,15 @@ function LandingPage() {
                 <Typography component="h1" variant="h3" className={classes.guideStep}>
                     2. Copy to your clipboard their Twitch names
                     <Typography component="h1" variant="h6" className={classes.guideStepContent}>
-                        For example, if you want to watch Caps, copying the "caps" part will suffice.
-                        <img src="images/tutorialStepImage.png"
-                             alt="Tutorial Step"
-                             className={classes.guideStepImage}/>
+                        For example, if you want to watch Caps, copying the "caps" part will suffice.<br/>
+                        <strong>twitch.tv/caps</strong>
+                    </Typography>
+                </Typography>
+                <Typography component="h1" variant="h3" className={classes.guideStep}>
+                    3. Paste it into the stream input
+                    <Typography component="h1" variant="h6" className={classes.guideStepContent}>
+                        Once you have the twitch streamer name, click the button to open the input and paste it in
+                        there.
                     </Typography>
                 </Typography>
             </Grid>
