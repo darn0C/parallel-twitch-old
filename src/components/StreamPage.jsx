@@ -74,7 +74,7 @@ function StreamPage() {
             </Grid>
             <iframe
                 title="First stream"
-                src="https://player.twitch.tv/?channel=coscu&parent=localhost:3000"
+                src="https://player.twitch.tv/?channel=coscu&parent=darn0c.github.io/parallel-twitch/"
                 height="50%"
                 width="50%"
                 frameBorder="0"
