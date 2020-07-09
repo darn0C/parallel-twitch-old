@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2f8c486dba8b3aba6d521bfe9b99df1",
+    "revision": "9c05cf2aa5c3cf9741d902e11dc001ad",
     "url": "/parallel-twitch/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/parallel-twitch/static/js/2.5e179a47.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e53ccaab33c7f11477bf",
-    "url": "/parallel-twitch/static/js/main.6b36ebae.chunk.js"
+    "revision": "0c31f8d5b9bcce32db6b",
+    "url": "/parallel-twitch/static/js/main.5e123c60.chunk.js"
   },
   {
     "revision": "464ff191ea0fc41dfd56",
