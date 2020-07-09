@@ -73,6 +73,7 @@ function StreamPage() {
                 </IconButton>
             </Grid>
             <iframe
+                title="First stream"
                 src="https://player.twitch.tv/?channel=coscu&parent=localhost:3000"
                 height="50%"
                 width="50%"
