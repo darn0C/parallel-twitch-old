@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/parallel-twitch/static/js/main.730ca523.chunk.js",
-    "main.js.map": "/parallel-twitch/static/js/main.730ca523.chunk.js.map",
+    "main.js": "/parallel-twitch/static/js/main.8ee76d29.chunk.js",
+    "main.js.map": "/parallel-twitch/static/js/main.8ee76d29.chunk.js.map",
     "runtime-main.js": "/parallel-twitch/static/js/runtime-main.34940a1d.js",
     "runtime-main.js.map": "/parallel-twitch/static/js/runtime-main.34940a1d.js.map",
-    "static/js/2.5e179a47.chunk.js": "/parallel-twitch/static/js/2.5e179a47.chunk.js",
-    "static/js/2.5e179a47.chunk.js.map": "/parallel-twitch/static/js/2.5e179a47.chunk.js.map",
+    "static/js/2.e02b4996.chunk.js": "/parallel-twitch/static/js/2.e02b4996.chunk.js",
+    "static/js/2.e02b4996.chunk.js.map": "/parallel-twitch/static/js/2.e02b4996.chunk.js.map",
     "index.html": "/parallel-twitch/index.html",
-    "precache-manifest.30101e99fb1ad943dc14f8d69066e0da.js": "/parallel-twitch/precache-manifest.30101e99fb1ad943dc14f8d69066e0da.js",
+    "precache-manifest.8be5ee742737aa437b069aba33f85e36.js": "/parallel-twitch/precache-manifest.8be5ee742737aa437b069aba33f85e36.js",
     "service-worker.js": "/parallel-twitch/service-worker.js",
-    "static/js/2.5e179a47.chunk.js.LICENSE.txt": "/parallel-twitch/static/js/2.5e179a47.chunk.js.LICENSE.txt"
+    "static/js/2.e02b4996.chunk.js.LICENSE.txt": "/parallel-twitch/static/js/2.e02b4996.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.34940a1d.js",
-    "static/js/2.5e179a47.chunk.js",
-    "static/js/main.730ca523.chunk.js"
+    "static/js/2.e02b4996.chunk.js",
+    "static/js/main.8ee76d29.chunk.js"
   ]
 }
