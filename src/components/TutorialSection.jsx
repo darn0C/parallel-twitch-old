@@ -67,7 +67,7 @@ function TutorialSection() {
                     3. Paste it into the stream input
                     <Typography component="h1" variant="h6" className={classes.guideStepContent}>
                         Once you have the twitch streamer name, click the button to open the input and paste it in
-                        there.
+                        there, then you can close it.
                     </Typography>
                 </Typography>
                 <Typography component="h1" variant="h3" className={classes.guideStep}>
