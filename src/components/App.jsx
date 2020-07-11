@@ -1,6 +1,5 @@
 import React from "react";
 import LandingPage from "./LandingPage";
-import StreamPage from "./StreamPage";
 
 function App () {
 
@@ -8,7 +7,6 @@ function App () {
 
         <div>
             <LandingPage/>
-            <StreamPage/>
         </div>
 
     )

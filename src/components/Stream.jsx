@@ -1,6 +1,6 @@
 import React from "react";
 
-function Stream (props) {
+function Stream () {
 
     return (
         <iframe
