@@ -15,7 +15,6 @@ function StreamPage(props) {
             height: "50vh",
             width: "50vw",
             display: "inline-block",
-            margin: "0",
             padding: "0"
         }
     }))
@@ -25,19 +24,23 @@ function StreamPage(props) {
     function renderStreams() {
         if (props.howManyStreams === 1) {
             return (
-                <iframe
-                    title="First stream"
-                    src={"https://player.twitch.tv/?channel=" + props.firstStream + "&parent=darn0c.github.io"}
-                    height="100%"
-                    width="100%"
-                    frameBorder="0"
-                    scrolling="no"
-                    allowFullScreen="true">
-                </iframe>
+                <Grid container direction="row" justify="center" alignItems="center" className={classes.root}>
+                    <CssBaseline/>
+                    <iframe
+                        title="First stream"
+                        src={"https://player.twitch.tv/?channel=" + props.firstStream + "&parent=darn0c.github.io"}
+                        height="100%"
+                        width="100%"
+                        frameBorder="0"
+                        scrolling="no"
+                        allowFullScreen="true">
+                    </iframe>
+                </Grid>
             )
         } else if (props.howManyStreams === 2) {
             return (
-                <div>
+                <Grid container direction="row" justify="center" alignItems="center" className={classes.root}>
+                    <CssBaseline/>
                     <div className={classes.streamContainer}>
                         <iframe
                             title="First stream"
@@ -60,11 +63,12 @@ function StreamPage(props) {
                             allowFullScreen="true">
                         </iframe>
                     </div>
-                </div>
+                </Grid>
             )
         } else if (props.howManyStreams === 3) {
             return (
-                <div>
+                <Grid container direction="row" justify="center" alignItems="center" className={classes.root}>
+                    <CssBaseline/>
                     <div className={classes.streamContainer}>
                         <iframe
                             title="First stream"
@@ -98,11 +102,13 @@ function StreamPage(props) {
                             allowFullScreen="true">
                         </iframe>
                     </div>
-                </div>
+                </Grid>
+
             )
         } else if (props.howManyStreams === 4) {
             return (
-                <div>
+                <Grid container direction="row" justify="center" alignItems="center" className={classes.root}>
+                    <CssBaseline/>
                     <div className={classes.streamContainer}>
                         <iframe
                             title="First stream"
@@ -147,17 +153,15 @@ function StreamPage(props) {
                             allowFullScreen="true">
                         </iframe>
                     </div>
-                </div>
+                </Grid>
             )
         }
     }
 
     return (
-        <Grid container direction="row" justify="center"
-              alignItems="center" className={classes.root}>
-            <CssBaseline/>
+        <div>
             {renderStreams()}
-        </Grid>
+        </div>
     )
 
 }
