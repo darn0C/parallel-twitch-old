@@ -10,6 +10,8 @@ import RemoveIcon from "@material-ui/icons/Remove";
 import Popper from "@material-ui/core/Popper";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import {render} from "react-dom";
+import StreamPage from "./StreamPage";
 
 // INPUT SECTION COMPONENT FUNCTION
 
@@ -180,6 +182,20 @@ function InputSection() {
         }
     }
 
+    function startStreams() {
+
+        if (streamCount === 0) {
+            alert("You have to set a minimum of one stream to watch")
+        } else if (streamCount >= 1) {
+            render(<StreamPage howManyStreams={streamCount}
+                               firstStream={firstStreamInput}
+                               secondStream={secondStreamInput}
+                               thirdStream={thirdStreamInput}
+                               fourthStream={fourthStreamInput}
+            />, document.getElementById("root"))
+        }
+    }
+
     // CUSTOM MATERIAL UI STYLING
 
     const useStyles = makeStyles(() => ({
@@ -210,7 +226,16 @@ function InputSection() {
                 backgroundColor: "#b9a3e3",
                 color: "#6441a5"
             }
+        },
+        streamButton: {
+            backgroundColor: "#6441a5",
+            color: "#f1f1f1",
+            "&:hover": {
+                backgroundColor: "#f1f1f1",
+                color: "#6441a5",
+            }
         }
+
     }))
 
     // MATERIAL UI CLASS CALLING
@@ -338,6 +363,12 @@ function InputSection() {
                 <Button disabled={isFourthStreamReady} onClick={lockFourthStream}
                         className={classes.inputButton}>SET</Button>
             </Popper>
+
+            {/*RENDER STREAMS BUTTON*/}
+
+            <Button onClick={startStreams} className={classes.streamButton}>
+                STREAM
+            </Button>
         </Grid>
     )
 

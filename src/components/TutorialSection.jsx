@@ -4,7 +4,6 @@ import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 
 // TUTORIAL SECTION COMPONENT FUNCTION
 
@@ -33,14 +32,6 @@ function TutorialSection() {
             fontSize: "1rem",
             width: "50vw",
             marginTop: theme.spacing(2)
-        },
-        streamButton: {
-            backgroundColor: "#6441a5",
-            color: "#f1f1f1",
-            "&:hover": {
-                backgroundColor: "#f1f1f1",
-                color: "#6441a5"
-            }
         }
 
     }))
@@ -104,12 +95,6 @@ function TutorialSection() {
                         Once you have all the streams set, click the "STREAM" button to start watching.
                     </Typography>
                 </Typography>
-
-                {/*RENDER STREAMS BUTTON*/}
-
-                <Button className={classes.streamButton}>
-                    STREAM
-                </Button>
             </Grid>
         </div>
 
