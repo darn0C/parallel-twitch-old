@@ -23,6 +23,12 @@ function TutorialSection() {
             color: "#b9a3e3",
             fontSize: "1rem",
         },
+        disclaimerLink: {
+            color: "#b9a3e3",
+            "&:hover": {
+                color: "#6441a5"
+            }
+        },
         guideStep: {
             color: "#6441a5",
             fontSize: "1.5rem"
@@ -54,7 +60,12 @@ function TutorialSection() {
 
                 <Typography component="h1" variant="h4" className={classes.disclaimer}>
                     Hello, this is a web app built by Conrado Remon for educational purposes and not for commercial use,
-                    however, you are able to use it if you want and you can access the source code in my GitHub.
+                    however, you are able to use it if you want and you can access the source code in
+                    my <a rel={"noopener noreferrer"} href="https://github.com/darn0C/parallel-twitch"
+                          target={"_blank"} className={classes.disclaimerLink}>GitHub</a>.<br/>
+                    This isn't built for mobile devices since viewport is not width enough, but you shouldn't have
+                    any problems using it on bigger devices. It also has a limit of 4 streams for the sake of
+                    maintaining reasonable sizes.
                 </Typography>
 
                 {/*FIRST TUTORIAL STEP*/}

@@ -1,9 +1,15 @@
+// IMPORT STATEMENTS
+
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
+// MAIN COMPONENT FUNCTION
+
 function StreamPage(props) {
+
+    // CUSTOM MATERIAL UI STYLING
 
     const useStyles = makeStyles(() => ({
         root: {
@@ -19,7 +25,14 @@ function StreamPage(props) {
         }
     }))
 
+    // CUSTOM STYLING CLASS CALLING
+
     const classes = useStyles()
+
+    // RENDER STREAMS FUNCTION
+    // With the number of streams for rendering passed as a prop, this function
+    // renders the corresponding number of stream components depending of
+    // how many streams the user has set.
 
     function renderStreams() {
         if (props.howManyStreams === 1) {
@@ -158,6 +171,10 @@ function StreamPage(props) {
         }
     }
 
+    // RETURN STATEMENT
+    // This is just a div for calling the function, the renderStream function
+    // makes all the work.
+
     return (
         <div>
             {renderStreams()}
@@ -165,5 +182,7 @@ function StreamPage(props) {
     )
 
 }
+
+// EXPORT STATEMENT
 
 export default StreamPage
