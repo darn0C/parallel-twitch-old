@@ -63,7 +63,7 @@ function TutorialSection() {
                     however, you are able to use it if you want and you can access the source code in
                     my <a rel={"noopener noreferrer"} href="https://github.com/darn0C/parallel-twitch"
                           target={"_blank"} className={classes.disclaimerLink}>GitHub</a>.<br/>
-                    This isn't built for mobile devices since viewport is not width enough, but you shouldn't have
+                    This isn't built for mobile devices since viewport is not wide enough, but you shouldn't have
                     any problems using it on bigger devices. It also has a limit of 4 streams for the sake of
                     maintaining reasonable sizes.
                 </Typography>
