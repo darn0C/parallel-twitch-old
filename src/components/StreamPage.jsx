@@ -129,7 +129,7 @@ function StreamPage(props) {
                             frameBorder="0"
                             scrolling="no"
                             id="chat_embed"
-                            src={"https://www.twitch.tv/embed/" + {currentChatInput} + "/chat?parent=darn0c.github.io"}
+                            src={"https://www.twitch.tv/embed/" + currentChatInput + "/chat?parent=darn0c.github.io"}
                             height="95%"
                             width="100%">
                         </iframe>
