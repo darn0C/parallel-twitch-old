@@ -19,9 +19,19 @@ function StreamPage(props) {
         },
         streamContainer: {
             height: "50vh",
-            width: "50vw",
+            width: "40vw",
             display: "inline-block",
             padding: "0"
+        },
+        chatContainer: {
+            height: "100vh",
+            width: "20vw",
+            display: "inline-block",
+            padding: "0"
+        },
+        chatButton: {
+            backgroundColor: "#6441a5",
+            color: "#b9a3e3",
         }
     }))
 
@@ -43,11 +53,22 @@ function StreamPage(props) {
                         title="First stream"
                         src={"https://player.twitch.tv/?channel=" + props.firstStream + "&parent=darn0c.github.io"}
                         height="100%"
-                        width="100%"
+                        width="80%"
                         frameBorder="0"
                         scrolling="no"
                         allowFullScreen="true">
                     </iframe>
+                    <div className={classes.chatContainer}>
+                        <iframe
+                            title="Chat window"
+                            frameBorder="0"
+                            scrolling="no"
+                            id="chat_embed"
+                            src={"https://www.twitch.tv/embed/" + props.firstStream + "/chat?parent=darn0c.github.io"}
+                            height="100%"
+                            width="100%">
+                        </iframe>
+                    </div>
                 </Grid>
             )
         } else if (props.howManyStreams === 2) {
