@@ -1,13 +1,18 @@
 // IMPORT STATEMENTS
 
-import React from "react";
+import React, {useState} from "react";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import Button from "@material-ui/core/Button";
 
-// MAIN COMPONENT FUNCTION
+// STREAM PAGE COMPONENT FUNCTION
 
 function StreamPage(props) {
+
+    // REACT STATE HOOKS
+
+    const [currentChatInput, setCurrentChatInput] = useState(props.firstStream)
 
     // CUSTOM MATERIAL UI STYLING
 
@@ -19,25 +24,42 @@ function StreamPage(props) {
         },
         streamContainer: {
             height: "50vh",
-            width: "40vw",
+            width: "42.5vw",
             display: "inline-block",
             padding: "0"
         },
         chatContainer: {
             height: "100vh",
-            width: "20vw",
+            width: "15vw",
             display: "inline-block",
             padding: "0"
         },
         chatButton: {
             backgroundColor: "#6441a5",
             color: "#b9a3e3",
+            height: "5vh",
+            "&:hover": {
+                backgroundColor: "#b9a3e3",
+                color: "#6441a5",
+            }
         }
     }))
 
     // CUSTOM STYLING CLASS CALLING
 
     const classes = useStyles()
+
+    // CHANGE CHAT RENDER FUNCTIONS
+    // This is a simple function to handle the buttons
+    // that change which chat are you currently at
+
+    function handleFirstButton() {
+        setCurrentChatInput(props.firstStream)
+    }
+
+    function handleSecondButton() {
+        setCurrentChatInput(props.secondStream)
+    }
 
     // RENDER STREAMS FUNCTION
     // With the number of streams for rendering passed as a prop, this function
@@ -53,7 +75,7 @@ function StreamPage(props) {
                         title="First stream"
                         src={"https://player.twitch.tv/?channel=" + props.firstStream + "&parent=darn0c.github.io"}
                         height="100%"
-                        width="80%"
+                        width="85%"
                         frameBorder="0"
                         scrolling="no"
                         allowFullScreen="true">
@@ -95,6 +117,21 @@ function StreamPage(props) {
                             frameBorder="0"
                             scrolling="no"
                             allowFullScreen="true">
+                        </iframe>
+                    </div>
+                    <div className={classes.chatContainer}>
+                        <Button className={classes.chatButton} onClick={handleFirstButton}
+                                style={{width: "50%"}}>{props.firstStream}</Button>
+                        <Button className={classes.chatButton} onClick={handleSecondButton}
+                                style={{width: "50%"}}>{props.secondStream}</Button>
+                        <iframe
+                            title="Chat window"
+                            frameBorder="0"
+                            scrolling="no"
+                            id="chat_embed"
+                            src={"https://www.twitch.tv/embed/" + {currentChatInput} + "/chat?parent=darn0c.github.io"}
+                            height="95%"
+                            width="100%">
                         </iframe>
                     </div>
                 </Grid>
